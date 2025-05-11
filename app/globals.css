@@ -61,3 +61,18 @@
 html {
   scroll-behavior: smooth;
 }
+
+.Hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url("/images/Background test.jpg") center center / cover no-repeat;
+  border-radius: 20px;
+  padding: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  animation: fadeIn 1.2s ease;
+  margin: 0;
+}

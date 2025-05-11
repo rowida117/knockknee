@@ -46,7 +46,7 @@ export default function Home() {
         </div>
       </header>
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <section className="Hero">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -104,8 +104,8 @@ export default function Home() {
         </section>
 
         <section id="objective" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
-          <div className="container px-4 md:px-6">
-            <div className="mx-auto max-w-3xl space-y-4 text-center">
+          <div className="w-full px-6 md:px-12 lg:px-16 mx-auto">
+            <div className="mx-auto max-w-7xl space-y-4 text-center">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Research Objective</h2>
               <p className="text-muted-foreground md:text-xl">
                 This research investigates the biomechanical implications of knock knee (genu valgum), focusing on:
@@ -189,7 +189,7 @@ export default function Home() {
               <div className="grid gap-6 sm:grid-cols-2">
                 <div className="overflow-hidden rounded-lg border">
                   <Image
-                    src="/images/knee-comparison.png"
+                    src="/images/Q angle.png"
                     alt="Comparison of leg alignments showing knock knee condition"
                     width={500}
                     height={300}
@@ -237,13 +237,13 @@ export default function Home() {
                       <CardTitle>Ground Reaction Forces</CardTitle>
                       <CardDescription>Comparison between normal and knock knee subjects</CardDescription>
                     </CardHeader>
-                    <CardContent className="p-0">
+                    <CardContent className="p-0 h-auto">
                       <Image
                         src="/placeholder.svg?height=300&width=400"
                         alt="Graph showing ground reaction forces"
                         width={400}
-                        height={300}
-                        className="object-cover w-full"
+                        height={200}
+                        className="object-cover w-full h-72"
                       />
                     </CardContent>
                   </Card>
@@ -252,13 +252,13 @@ export default function Home() {
                       <CardTitle>Joint Angles</CardTitle>
                       <CardDescription>Knee valgus angles during gait cycle</CardDescription>
                     </CardHeader>
-                    <CardContent className="p-0">
+                    <CardContent className="p-0 h-auto">
                       <Image
                         src="/images/Knee anlges.jpeg"
                         alt="Graph showing joint angles"
-                        width={200}
-                        height={300}
-                        className="object-cover w-full"
+                        width={400}
+                        height={200}
+                        className="object-cover w-full h-72"
                       />
                     </CardContent>
                   </Card>
@@ -267,13 +267,13 @@ export default function Home() {
                       <CardTitle>Joint Speeds</CardTitle>
                       <CardDescription>Comparison between normal and knock knee speeds</CardDescription>
                     </CardHeader>
-                    <CardContent className="p-0">
+                    <CardContent className="p-0 h-auto">
                       <Image
                         src="/images/Left Knee joint speeds.jpeg"
                         alt="Graph showing muscle activation patterns"
                         width={400}
-                        height={300}
-                        className="object-cover w-full"
+                        height={200}
+                        className="object-cover w-full h-72"
                       />
                     </CardContent>
                   </Card>
