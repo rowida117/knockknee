@@ -394,7 +394,7 @@ export default function Home() {
                       <div className="aspect-video bg-muted flex items-center justify-center">
                         {/* Replace with actual video embed */}
                         <video controls className="w-full h-full">
-                          <source src="https://drive.google.com/file/d/1aCZtdrb_y1EmippRCS-CfVuUH9anBm91/view?usp=drive_link" type="video/mp4" />
+                          <source src="/videos/Normal movment.mp4" type="video/mp4" />
                           Your browser does not support the video tag.
                         </video>
                       </div>
