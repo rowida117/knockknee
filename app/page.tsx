@@ -595,8 +595,8 @@ export default function Home() {
                     <a href="mailto:malak.hamshary06@eng-st.cu.edu.eg" className="text-primary hover:underline">
                       malak.hamshary06@eng-st.cu.edu.eg
                     </a>
-                    <a href="mailto:ali.gad06@eng-st.cu.edu.eg" className="text-primary hover:underline">
-                      ali.gad06@eng-st.cu.edu.eg
+                    <a href="mailto:ali.gad05@eng-st.cu.edu.eg" className="text-primary hover:underline">
+                      ali.gad05@eng-st.cu.edu.eg
                     </a>
                     <a href="mailto:yousef.abdelwahed05@eng-st.cu.edu.eg" className="text-primary hover:underline">
                       yousef.abdelwahed05@eng-st.cu.edu.eg
