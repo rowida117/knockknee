@@ -577,7 +577,7 @@ export default function Home() {
 
               <Card>
                 <CardHeader>
-                  <CardTitle>Team 8</CardTitle>
+                  <CardTitle>Team 2</CardTitle>
                   <CardDescription>Biomechanics Research Group</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
@@ -588,9 +588,24 @@ export default function Home() {
                     <h3 className="text-xl font-bold">Contact Information</h3>
                   </div>
 
-                  <div className="flex items-center justify-center gap-2 mt-4">
-                    <a href="mailto:rowidamohamed04.eng.cu.edu.eg" className="text-primary hover:underline">
-                      rowidamohamed04.eng.cu.edu.eg
+                  <div className="flex flex-col items-center justify-center gap-2 mt-4">
+                    <a href="mailto:rowidamohamed04@eng-st.cu.edu.eg" className="text-primary hover:underline">
+                      rowidamohamed04@eng-st.cu.edu.eg
+                    </a>
+                    <a href="mailto:malak.hamshary06@eng-st.cu.edu.eg" className="text-primary hover:underline">
+                      malak.hamshary06@eng-st.cu.edu.eg
+                    </a>
+                    <a href="mailto:ali.gad06@eng-st.cu.edu.eg" className="text-primary hover:underline">
+                      ali.gad06@eng-st.cu.edu.eg
+                    </a>
+                    <a href="mailto:yousef.abdelwahed05@eng-st.cu.edu.eg" className="text-primary hover:underline">
+                      yousef.abdelwahed05@eng-st.cu.edu.eg
+                    </a>
+                    <a href="mailto:Nada.Morad05@eng-st.cu.edu.eg" className="text-primary hover:underline">
+                      Nada.Morad05@eng-st.cu.edu.eg
+                    </a>
+                    <a href="mailto:yomna.hendy06@eng-st.cu.edu.eg" className="text-primary hover:underline">
+                      yomna.hendy06@eng-st.cu.edu.eg
                     </a>
                   </div>
 
@@ -620,14 +635,23 @@ export default function Home() {
       <footer className="w-full border-t py-6">
         <div className="container flex flex-col items-center justify-center gap-4 px-4 md:px-6 text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Biomechanics Research Team 8. All rights reserved.
+            © {new Date().getFullYear()} Biomechanics Research Team 2. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground">
             For inquiries about this research, please contact{" "}
             <a href="mailto:rowidamohamed04.eng.cu.edu.eg" className="text-primary hover:underline">
-              rowidamohamed04.eng.cu.edu.eg
+              rowidamohamed04@eng-st.cu.edu.eg
+              
             </a>
           </p>
+          <a
+            href="https://forms.gle/jSar9GLLEFetu8rM8"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-primary hover:bg-primary-dark rounded-md transition-colors duration-300"
+          >
+            Tell us about your experience
+          </a>
         </div>
       </footer>
     </div>
