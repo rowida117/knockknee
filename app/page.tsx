@@ -29,6 +29,9 @@ export default function Home() {
               <Link href="#gait-videos" className="transition-colors hover:text-foreground/80">
                 Gait Videos
               </Link>
+              <Link href="#3d-simulation" className="transition-colors hover:text-foreground/80">
+                3D Simulation Videos
+              </Link>
               <Link href="#presentation" className="transition-colors hover:text-foreground/80">
                 Presentation
               </Link>
