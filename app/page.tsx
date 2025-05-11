@@ -442,7 +442,7 @@ export default function Home() {
                   <Card className="overflow-hidden">
                     <CardHeader>
                       <CardTitle>Normal Gait with Motion Capture</CardTitle>
-                      <CardDescription>3D motion analysis of normal walking pattern</CardDescription>
+                      <CardDescription>Analysis of normal walking pattern</CardDescription>
                     </CardHeader>
                     <CardContent className="p-0">
                       <div className="aspect-video bg-muted flex items-center justify-center">
@@ -466,7 +466,7 @@ export default function Home() {
                   <Card className="overflow-hidden">
                     <CardHeader>
                       <CardTitle>Knock Knee Gait with Motion Capture</CardTitle>
-                      <CardDescription>3D motion analysis of genu valgum walking pattern</CardDescription>
+                      <CardDescription>Analysis of genu valgum walking pattern</CardDescription>
                     </CardHeader>
                     <CardContent className="p-0">
                       <div className="aspect-video bg-muted flex items-center justify-center">
@@ -500,6 +500,74 @@ export default function Home() {
               >
                 <Download className="h-4 w-4" />
                 <span>Download All Gait Analysis Videos</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section id="3d-simulation" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+          <div className="container px-4 md:px-6">
+            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl text-center mb-8">3D Simulation Videos</h2>
+            <div className="grid gap-8 lg:grid-cols-2">
+              {/* Normal Knee Alignment Video */}
+              <Card className="overflow-hidden">
+                <CardHeader>
+                  <CardTitle>Simulation of Normal Knee Mechanics</CardTitle>
+                  <CardDescription>3D model showing normal knee alignment during movement</CardDescription>
+                </CardHeader>
+                <CardContent className="p-0">
+                  <div className="aspect-video bg-muted flex items-center justify-center">
+                    {/* Replace with actual video embed */}
+                    <video controls className="w-full h-full">
+                      <source src="/videos/normal movment simulation.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </CardContent>
+                <CardFooter className="flex flex-col items-start pt-4">
+                  <h4 className="font-medium mb-2">Key Features:</h4>
+                  <ul className="list-disc pl-6 text-muted-foreground text-sm">
+                    <li>Neutral alignment of the knee joint</li>
+                    <li>Smooth articulation of joint surfaces</li>
+                    <li>Optimal load distribution across the knee</li>
+                  </ul>
+                </CardFooter>
+              </Card>
+
+              {/* Knock Knee Alignment Video */}
+              <Card className="overflow-hidden">
+                <CardHeader>
+                  <CardTitle>Simulation of Knock Knee Mechanics</CardTitle>
+                  <CardDescription>3D model showing knock knee alignment during movement</CardDescription>
+                </CardHeader>
+                <CardContent className="p-0">
+                  <div className="aspect-video bg-muted flex items-center justify-center">
+                    {/* Replace with actual video embed */}
+                    <video controls className="w-full h-full">
+                      <source src="/videos/Knock knee simulation.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </CardContent>
+                <CardFooter className="flex flex-col items-start pt-4">
+                  <h4 className="font-medium mb-2">Key Features:</h4>
+                  <ul className="list-disc pl-6 text-muted-foreground text-sm">
+                    <li>Increased medial loading on the knee joint</li>
+                    <li>Abnormal articulation of joint surfaces</li>
+                    <li>Compensatory movements in adjacent joints</li>
+                  </ul>
+                </CardFooter>
+              </Card>
+            </div>
+            <div className="flex justify-center mt-8">
+              <a
+                href="https://drive.google.com/drive/folders/1xI0VocLYsjgjVFmpaQjis4AYXwf4hdN_?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm"
+              >
+                <Download className="h-4 w-4" />
+                <span>Download All 3D Simulation Videos</span>
               </a>
             </div>
           </div>
