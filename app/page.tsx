@@ -360,7 +360,7 @@ export default function Home() {
             </Tabs>
             <div className="flex justify-center mt-8">
               <a
-                href="https://drive.google.com/file/d/1bifTpbUD2npYn2JmF7xSnWNwVmbMwzp2/view?usp=drive_link"
+                href="https://drive.google.com/drive/folders/1RR03MKyN1-BwNnLMdHcQIxXx9roBqcx4?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm"
