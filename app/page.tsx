@@ -189,7 +189,7 @@ export default function Home() {
               <div className="grid gap-6 sm:grid-cols-2">
                 <div className="overflow-hidden rounded-lg border">
                   <Image
-                    src="/images/Q angle.png"
+                    src="/images/Q angle.jpg"
                     alt="Comparison of leg alignments showing knock knee condition"
                     width={500}
                     height={300}
@@ -340,9 +340,19 @@ export default function Home() {
                     </CardContent>
                     <CardHeader>
                       <CardTitle>Solutions for Knock knee</CardTitle>
-                      <CardDescription>A wearable device designed to provide support and corrective alignment for individuals with knock knees</CardDescription>
+                      <CardDescription style={{ fontSize: '18px', lineHeight: '1.5' }}>
+                        Introducing KneeNeuroMesh
+                        Smart Support for Knock Knee Correction
+
+                        KneeNeuroMesh is an advanced wearable biomedical system designed to correct genu valgum (knock knee) through intelligent, real-time support. Unlike traditional passive braces, KneeNeuroMesh combines soft robotics, neuromuscular electrical stimulation (EMS), biofeedback, and artificial intelligence (AI) to deliver an active and adaptive solution.
+
+                        This smart device monitors your movement continuously, detects misalignments, and responds instantly. It gently realigns the knees, activates weakened muscles, and supports proper gait—all while you move. The built-in AI learns your unique walking pattern and adjusts the support and stimulation accordingly, making the system personalized and increasingly effective over time.
+
+                        KneeNeuroMesh goes beyond support—it promotes lasting correction, improved muscle control, and healthier movement.
+                      </CardDescription>
                     </CardHeader>
                   </Card>
+
                   <Card className="overflow-hidden">
                     <CardContent className="p-0">
                       <Image
@@ -355,7 +365,9 @@ export default function Home() {
                     </CardContent>
                     <CardHeader>
                       <CardTitle>3D Joint Model</CardTitle>
-                      <CardDescription>Finite element analysis of knee joint forces</CardDescription>
+                      <CardDescription style={{ fontSize: '18px', lineHeight: '1.5' }}>
+                        Finite element analysis of knee joint forces
+                      </CardDescription>
                     </CardHeader>
                   </Card>
                 </div>
