@@ -264,8 +264,8 @@ export default function Home() {
                   </Card>
                   <Card className="overflow-hidden">
                     <CardHeader>
-                      <CardTitle>Muscle Activation</CardTitle>
-                      <CardDescription>EMG data for quadriceps and hamstrings</CardDescription>
+                      <CardTitle>Joint Speeds</CardTitle>
+                      <CardDescription>Comparison between normal and knock knee speeds</CardDescription>
                     </CardHeader>
                     <CardContent className="p-0">
                       <Image
@@ -331,7 +331,7 @@ export default function Home() {
                   <Card className="overflow-hidden">
                     <CardContent className="p-0">
                       <Image
-                        src="/placeholder.svg?height=400&width=600"
+                        src="/images/solutions for knock knee.png"
                         alt="Pressure mapping of foot during stance phase"
                         width={600}
                         height={400}
@@ -339,8 +339,8 @@ export default function Home() {
                       />
                     </CardContent>
                     <CardHeader>
-                      <CardTitle>Pressure Mapping</CardTitle>
-                      <CardDescription>Comparison of foot pressure distribution</CardDescription>
+                      <CardTitle>Solutions for Knock knee</CardTitle>
+                      <CardDescription>A wearable device designed to provide support and corrective alignment for individuals with knock knees</CardDescription>
                     </CardHeader>
                   </Card>
                   <Card className="overflow-hidden">
