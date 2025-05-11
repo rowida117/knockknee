@@ -269,7 +269,7 @@ export default function Home() {
                     </CardHeader>
                     <CardContent className="p-0">
                       <Image
-                        src="/placeholder.svg?height=300&width=400"
+                        src="/images/Left Knee joint speeds.jpeg"
                         alt="Graph showing muscle activation patterns"
                         width={400}
                         height={300}
@@ -346,7 +346,7 @@ export default function Home() {
                   <Card className="overflow-hidden">
                     <CardContent className="p-0">
                       <Image
-                        src="/placeholder.svg?height=400&width=600"
+                        src="/images/Knee 3D model image.jpeg"
                         alt="3D model of knee joint forces"
                         width={600}
                         height={400}
