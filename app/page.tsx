@@ -251,7 +251,7 @@ export default function Home() {
                     </CardHeader>
                     <CardContent className="p-0">
                       <Image
-                        src="/placeholder.svg?height=300&width=400"
+                        src="/images/Knee anlges.jpeg"
                         alt="Graph showing joint angles"
                         width={400}
                         height={300}
