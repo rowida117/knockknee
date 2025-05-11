@@ -65,14 +65,49 @@ html {
 .Hero {
   min-height: 80vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: url("/images/Background test.jpg") center center / cover no-repeat;
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Center content horizontally */
+  background: url("/images/Hero background.png") center center / cover no-repeat;
   border-radius: 20px;
   padding: 40px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   position: relative;
   animation: fadeIn 1.2s ease;
   margin: 0;
+}
+
+.content {
+  text-align: center; /* Ensure text is aligned to the left (or center as per your comment) */
+  max-width: 60%; /* Limit the width of the text container */
+  margin-left: 20px; /* Add spacing from the left edge */
+  color: #ffffff; /* Change this value to the desired text color */
+}
+
+.content p {
+  color: #ffffff; /* Change this value to the desired paragraph text color */
+  font-size: 18px; /* Optional: Adjust font size for better readability */
+  line-height: 1.6; /* Optional: Improve spacing between lines */
+}
+
+.Card {
+  border: 1px solid #e5e7eb; /* Optional: Adds a subtle border */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensures content stays within rounded borders */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for the Card */
+.Card:hover {
+  transform: translateY(-5px); /* Slightly lifts the card up */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  background-color: #f9fafb; /* Changes background color on hover */
+}
+
+/* Optional: Enhance CardTitle and CardContent on hover */
+.Card:hover .CardTitle {
+  color: #1e40af; /* Changes title text color */
+}
+
+.Card:hover .CardContent {
+  color: #374151; /* Changes content text color */
 }

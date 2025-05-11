@@ -47,7 +47,7 @@ export default function Home() {
       </header>
       <main className="flex-1">
         <section className="Hero">
-          <div className="container px-4 md:px-6">
+          <div className="content">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
@@ -111,51 +111,51 @@ export default function Home() {
                 This research investigates the biomechanical implications of knock knee (genu valgum), focusing on:
               </p>
               <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                <Card>
+                <Card className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-lg hover:-translate-y-1 transition-transform duration-300">
                   <CardHeader>
-                    <CardTitle>Gait Analysis</CardTitle>
+                    <CardTitle className="text-lg font-bold hover:text-blue-700">Gait Analysis</CardTitle>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="hover:text-gray-800">
                     <p>Quantifying alterations in walking patterns and weight distribution during locomotion</p>
                   </CardContent>
                 </Card>
-                <Card>
+                <Card className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-lg hover:-translate-y-1 transition-transform duration-300">
                   <CardHeader>
-                    <CardTitle>Force Distribution</CardTitle>
+                    <CardTitle className="text-lg font-bold hover:text-blue-700">Force Distribution</CardTitle>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="hover:text-gray-800">
                     <p>Measuring abnormal forces across the knee joint and surrounding structures</p>
                   </CardContent>
                 </Card>
-                <Card>
+                <Card className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-lg hover:-translate-y-1 transition-transform duration-300">
                   <CardHeader>
-                    <CardTitle>Alignment Assessment</CardTitle>
+                    <CardTitle className="text-lg font-bold hover:text-blue-700">Alignment Assessment</CardTitle>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="hover:text-gray-800">
                     <p>Evaluating the degree of misalignment and its correlation with functional outcomes</p>
                   </CardContent>
                 </Card>
-                <Card>
+                <Card className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-lg hover:-translate-y-1 transition-transform duration-300">
                   <CardHeader>
-                    <CardTitle>Muscle Activation</CardTitle>
+                    <CardTitle className="text-lg font-bold hover:text-blue-700">Muscle Activation</CardTitle>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="hover:text-gray-800">
                     <p>Analyzing EMG patterns in lower limb muscles during various activities</p>
                   </CardContent>
                 </Card>
-                <Card>
+                <Card className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-lg hover:-translate-y-1 transition-transform duration-300">
                   <CardHeader>
-                    <CardTitle>Corrective Measures</CardTitle>
+                    <CardTitle className="text-lg font-bold hover:text-blue-700">Corrective Measures</CardTitle>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="hover:text-gray-800">
                     <p>Testing the efficacy of various interventions on improving biomechanical function</p>
                   </CardContent>
                 </Card>
-                <Card>
+                <Card className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-lg hover:-translate-y-1 transition-transform duration-300">
                   <CardHeader>
-                    <CardTitle>Long-term Impact</CardTitle>
+                    <CardTitle className="text-lg font-bold hover:text-blue-700">Long-term Impact</CardTitle>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="hover:text-gray-800">
                     <p>Assessing the progression of joint degeneration and functional limitations over time</p>
                   </CardContent>
                 </Card>
@@ -234,12 +234,12 @@ export default function Home() {
                 <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                   <Card className="overflow-hidden">
                     <CardHeader>
-                      <CardTitle>Ground Reaction Forces</CardTitle>
-                      <CardDescription>Comparison between normal and knock knee subjects</CardDescription>
+                      <CardTitle>Joint accelration</CardTitle>
+                      <CardDescription>Comparison between normal and knock knee accelrations</CardDescription>
                     </CardHeader>
                     <CardContent className="p-0 h-auto">
                       <Image
-                        src="/placeholder.svg?height=300&width=400"
+                        src="/images/acceleration graph.jpeg"
                         alt="Graph showing ground reaction forces"
                         width={400}
                         height={200}
