@@ -392,10 +392,9 @@ export default function Home() {
                     </CardHeader>
                     <CardContent className="p-0">
                       <div className="aspect-video bg-muted flex items-center justify-center">
-                        <p className="text-muted-foreground">Normal gait video without markers</p>
                         {/* Replace with actual video embed */}
                         <video controls className="w-full h-full">
-                          <source src="/videos/Normal movment.mp4" type="video/mp4" />
+                          <source src="https://drive.google.com/file/d/1aCZtdrb_y1EmippRCS-CfVuUH9anBm91/view?usp=drive_link" type="video/mp4" />
                           Your browser does not support the video tag.
                         </video>
                       </div>
@@ -417,7 +416,6 @@ export default function Home() {
                     </CardHeader>
                     <CardContent className="p-0">
                       <div className="aspect-video bg-muted flex items-center justify-center">
-                        <p className="text-muted-foreground">Knock knee gait video without markers</p>
                         {/* Replace with actual video embed */}
                         <video controls className="w-full h-full">
                           <source src="/videos/Knock knee.mp4" type="video/mp4" />
@@ -448,7 +446,6 @@ export default function Home() {
                     </CardHeader>
                     <CardContent className="p-0">
                       <div className="aspect-video bg-muted flex items-center justify-center">
-                        <p className="text-muted-foreground">Normal gait video with motion capture markers</p>
                         {/* Replace with actual video embed */}
                         <video controls className="w-full h-full">
                           <source src="/videos/Normal movment with markers.mp4" type="video/mp4" />
@@ -473,7 +470,6 @@ export default function Home() {
                     </CardHeader>
                     <CardContent className="p-0">
                       <div className="aspect-video bg-muted flex items-center justify-center">
-                        <p className="text-muted-foreground">Knock knee gait video with motion capture markers</p>
                         {/* Replace with actual video embed */}
                         <video controls className="w-full h-full">
                           <source src="/videos/Knock knee with markers.mp4" type="video/mp4" />
