@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Download, FileText, ChevronDown } from "lucide-react"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 export default function Home() {
@@ -253,7 +253,7 @@ export default function Home() {
                       <Image
                         src="/images/Knee anlges.jpeg"
                         alt="Graph showing joint angles"
-                        width={400}
+                        width={200}
                         height={300}
                         className="object-cover w-full"
                       />
@@ -374,59 +374,137 @@ export default function Home() {
 
         <section id="gait-videos" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl text-center mb-12">Gait Analysis Videos</h2>
-            <div className="grid gap-8 lg:grid-cols-2">
-              <div className="space-y-4">
-                <h3 className="text-xl font-bold text-center">Normal Gait</h3>
-                <div className="aspect-video overflow-hidden rounded-lg border bg-muted flex items-center justify-center">
-                  <p className="text-muted-foreground">Normal gait video placeholder</p>
-                  {/* Replace with actual video embed */}
-                  {/* <video controls className="w-full h-full">
-                    <source src="/videos/normal-gait.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video> */}
-                </div>
-                <div className="space-y-2">
-                  <h4 className="font-medium">Characteristics:</h4>
-                  <ul className="list-disc pl-6 text-muted-foreground">
-                    <li>Neutral knee alignment throughout gait cycle</li>
-                    <li>Even weight distribution across joint surfaces</li>
-                    <li>Efficient energy transfer between gait phases</li>
-                    <li>Coordinated muscle activation patterns</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <h3 className="text-xl font-bold text-center">Knock Knee Gait</h3>
-                <div className="aspect-video overflow-hidden rounded-lg border bg-muted flex items-center justify-center">
-                  <p className="text-muted-foreground">Knock knee gait video placeholder</p>
-                  {/* Replace with actual video embed */}
-                  {/* <video controls className="w-full h-full">
-                    <source src="/videos/knock-knee-gait.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video> */}
-                </div>
-                <div className="space-y-2">
-                  <h4 className="font-medium">Characteristics:</h4>
-                  <ul className="list-disc pl-6 text-muted-foreground">
-                    <li>Increased medial knee deviation during stance phase</li>
-                    <li>Compensatory foot pronation and hip rotation</li>
-                    <li>Altered center of mass trajectory</li>
-                    <li>Increased energy expenditure during walking</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="mt-12 space-y-4">
-              <h3 className="text-xl font-bold text-center">Detailed Motion Analysis</h3>
-              <div className="aspect-video overflow-hidden rounded-lg border bg-muted flex items-center justify-center">
-                <p className="text-muted-foreground">3D motion capture analysis video placeholder</p>
-                {/* Replace with actual video embed */}
-                {/* <video controls className="w-full h-full">
-                  <source src="/videos/motion-analysis.mp4" type="video/mp4" />
+            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl text-center mb-8">Gait Analysis Videos</h2>
+
+            <Tabs defaultValue="no-markers" className="w-full">
+              <TabsList className="grid w-full max-w-md mx-auto md:grid-cols-2">
+                <TabsTrigger value="no-markers">Videos without Markers</TabsTrigger>
+                <TabsTrigger value="with-markers">Videos with Markers</TabsTrigger>
+              </TabsList>
+
+              {/* Videos without Markers Tab */}
+              <TabsContent value="no-markers" className="mt-6">
+                <div className="grid gap-8 lg:grid-cols-2">
+                  <Card className="overflow-hidden">
+                    <CardHeader>
+                      <CardTitle>Normal Gait</CardTitle>
+                      <CardDescription>Subject walking with normal knee alignment</CardDescription>
+                    </CardHeader>
+                    <CardContent className="p-0">
+                      <div className="aspect-video bg-muted flex items-center justify-center">
+                        <p className="text-muted-foreground">Normal gait video without markers</p>
+                        {/* Replace with actual video embed */}
+                        {/* <video controls className="w-full h-full">
+                  <source src="/videos/Normal movment.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video> */}
-              </div>
+                      </div>
+                    </CardContent>
+                    <CardFooter className="flex flex-col items-start pt-4">
+                      <h4 className="font-medium mb-2">Characteristics:</h4>
+                      <ul className="list-disc pl-6 text-muted-foreground text-sm">
+                        <li>Neutral knee alignment throughout gait cycle</li>
+                        <li>Even weight distribution across joint surfaces</li>
+                        <li>Efficient energy transfer between gait phases</li>
+                      </ul>
+                    </CardFooter>
+                  </Card>
+
+                  <Card className="overflow-hidden">
+                    <CardHeader>
+                      <CardTitle>Knock Knee Gait</CardTitle>
+                      <CardDescription>Subject walking with genu valgum condition</CardDescription>
+                    </CardHeader>
+                    <CardContent className="p-0">
+                      <div className="aspect-video bg-muted flex items-center justify-center">
+                        <p className="text-muted-foreground">Knock knee gait video without markers</p>
+                        {/* Replace with actual video embed */}
+                        {/* <video controls className="w-full h-full">
+                  <source src="/videos/Knock knee.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video> */}
+                      </div>
+                    </CardContent>
+                    <CardFooter className="flex flex-col items-start pt-4">
+                      <h4 className="font-medium mb-2">Characteristics:</h4>
+                      <ul className="list-disc pl-6 text-muted-foreground text-sm">
+                        <li>Increased medial knee deviation during stance phase</li>
+                        <li>Compensatory foot pronation and hip rotation</li>
+                        <li>Altered center of mass trajectory</li>
+                        <li>Increased energy expenditure during walking</li>
+                      </ul>
+                    </CardFooter>
+                  </Card>
+                </div>
+              </TabsContent>
+
+              {/* Videos with Markers Tab */}
+              <TabsContent value="with-markers" className="mt-6">
+                <div className="grid gap-8 lg:grid-cols-2">
+                  <Card className="overflow-hidden">
+                    <CardHeader>
+                      <CardTitle>Normal Gait with Motion Capture</CardTitle>
+                      <CardDescription>3D motion analysis of normal walking pattern</CardDescription>
+                    </CardHeader>
+                    <CardContent className="p-0">
+                      <div className="aspect-video bg-muted flex items-center justify-center">
+                        <p className="text-muted-foreground">Normal gait video with motion capture markers</p>
+                        {/* Replace with actual video embed */}
+                        {/* <video controls className="w-full h-full">
+                  <source src="/videos/Normal movment with markers.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video> */}
+                      </div>
+                    </CardContent>
+                    <CardFooter className="flex flex-col items-start pt-4">
+                      <h4 className="font-medium mb-2">Analysis Points:</h4>
+                      <ul className="list-disc pl-6 text-muted-foreground text-sm">
+                        <li>Consistent joint angles throughout stance and swing phases</li>
+                        <li>Symmetrical movement patterns between left and right limbs</li>
+                        <li>Coordinated muscle activation patterns visible in marker trajectories</li>
+                      </ul>
+                    </CardFooter>
+                  </Card>
+
+                  <Card className="overflow-hidden">
+                    <CardHeader>
+                      <CardTitle>Knock Knee Gait with Motion Capture</CardTitle>
+                      <CardDescription>3D motion analysis of genu valgum walking pattern</CardDescription>
+                    </CardHeader>
+                    <CardContent className="p-0">
+                      <div className="aspect-video bg-muted flex items-center justify-center">
+                        <p className="text-muted-foreground">Knock knee gait video with motion capture markers</p>
+                        {/* Replace with actual video embed */}
+                        {/* <video controls className="w-full h-full">
+                  <source src="/videos/Knock knee with markers.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video> */}
+                      </div>
+                    </CardContent>
+                    <CardFooter className="flex flex-col items-start pt-4">
+                      <h4 className="font-medium mb-2">Analysis Points:</h4>
+                      <ul className="list-disc pl-6 text-muted-foreground text-sm">
+                        <li>Quantifiable medial deviation of knee markers during stance</li>
+                        <li>Altered angular velocity at the knee joint during gait cycle</li>
+                        <li>Visible compensatory mechanisms in hip and ankle marker trajectories</li>
+                        <li>Asymmetrical loading patterns throughout the kinetic chain</li>
+                      </ul>
+                    </CardFooter>
+                  </Card>
+                </div>
+              </TabsContent>
+            </Tabs>
+
+            <div className="flex justify-center mt-8">
+              <a
+                href="https://drive.google.com/drive/folders/1HTF_STZRYkQlTiESRdwu2Ml5VJUyE6YS?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm"
+              >
+                <Download className="h-4 w-4" />
+                <span>Download All Gait Analysis Videos</span>
+              </a>
             </div>
           </div>
         </section>
@@ -641,7 +719,6 @@ export default function Home() {
             For inquiries about this research, please contact{" "}
             <a href="mailto:rowidamohamed04.eng.cu.edu.eg" className="text-primary hover:underline">
               rowidamohamed04@eng-st.cu.edu.eg
-              
             </a>
           </p>
           <a
