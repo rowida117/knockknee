@@ -58,15 +58,17 @@
   }
 }
 
+/* Core styles */
 html {
   scroll-behavior: smooth;
 }
 
+/* Hero section styles */
 .Hero {
   min-height: 80vh;
   display: flex;
-  align-items: center; /* Vertically center the content */
-  justify-content: center; /* Center content horizontally */
+  align-items: center;
+  justify-content: center;
   background: url("/images/Hero background.png") center center / cover no-repeat;
   border-radius: 20px;
   padding: 40px;
@@ -76,38 +78,95 @@ html {
   margin: 0;
 }
 
+@media (max-width: 768px) {
+  .Hero {
+    min-height: 60vh;
+    padding: 20px;
+    border-radius: 10px;
+  }
+}
+
 .content {
-  text-align: center; /* Ensure text is aligned to the left (or center as per your comment) */
-  max-width: 60%; /* Limit the width of the text container */
-  margin-left: 20px; /* Add spacing from the left edge */
-  color: #ffffff; /* Change this value to the desired text color */
+  text-align: center;
+  max-width: 60%;
+  margin-left: 20px;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .content {
+    max-width: 90%;
+    margin-left: 0;
+  }
 }
 
 .content p {
-  color: #ffffff; /* Change this value to the desired paragraph text color */
-  font-size: 18px; /* Optional: Adjust font size for better readability */
-  line-height: 1.6; /* Optional: Improve spacing between lines */
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
+@media (max-width: 768px) {
+  .content p {
+    font-size: 16px;
+  }
+}
+
+/* Card styles */
 .Card {
-  border: 1px solid #e5e7eb; /* Optional: Adds a subtle border */
-  border-radius: 8px; /* Rounded corners */
-  overflow: hidden; /* Ensures content stays within rounded borders */
-  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
-/* Hover effect for the Card */
 .Card:hover {
-  transform: translateY(-5px); /* Slightly lifts the card up */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-  background-color: #f9fafb; /* Changes background color on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  background-color: #f9fafb;
 }
 
-/* Optional: Enhance CardTitle and CardContent on hover */
 .Card:hover .CardTitle {
-  color: #1e40af; /* Changes title text color */
+  color: #1e40af;
 }
 
 .Card:hover .CardContent {
-  color: #374151; /* Changes content text color */
+  color: #374151;
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  /* Improve touch targets */
+  button,
+  a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Adjust spacing for mobile */
+  section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* Improve video controls for touch */
+  video {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Make tabs more touch-friendly */
+  [role="tab"] {
+    padding: 12px 16px;
+  }
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

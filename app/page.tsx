@@ -3,12 +3,13 @@ import Image from "next/image"
 import { Download, FileText, ChevronDown } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { MobileNav } from "@/components/mobile-nav"
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center">
+        <div className="container flex h-16 items-center justify-between">
           <div className="mr-4 hidden md:flex">
             <Link href="/" className="mr-6 flex items-center space-x-2">
               <span className="font-bold">Biomechanics Research</span>
@@ -43,6 +44,12 @@ export default function Home() {
               </Link>
             </nav>
           </div>
+          <div className="md:hidden">
+            <Link href="/" className="flex items-center">
+              <span className="font-bold">Biomechanics Research</span>
+            </Link>
+          </div>
+          <MobileNav />
         </div>
       </header>
       <main className="flex-1">
@@ -50,10 +57,10 @@ export default function Home() {
           <div className="content">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+                <h1 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
                   Biomechanics of Knock Knee (Genu Valgum)
                 </h1>
-                <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+                <p className="mx-auto max-w-[700px] text-base md:text-xl">
                   A comprehensive research study on the biomechanical implications of genu valgum
                 </p>
               </div>
@@ -61,19 +68,19 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="introduction" className="w-full py-12 md:py-24 lg:py-32">
+        <section id="introduction" className="w-full py-8 md:py-12 lg:py-24">
           <div className="container px-4 md:px-6">
-            <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
+            <div className="grid gap-6 md:gap-10 lg:grid-cols-2 lg:gap-16">
               <div className="space-y-4">
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Introduction</h2>
+                <h2 className="text-2xl font-bold tracking-tighter md:text-3xl lg:text-4xl">Introduction</h2>
                 <div className="space-y-4">
-                  <h3 className="text-xl font-bold">What is Knock Knee?</h3>
+                  <h3 className="text-lg md:text-xl font-bold">What is Knock Knee?</h3>
                   <p className="text-muted-foreground">
                     Knock knee, or genu valgum, is a condition where the knees angle inward and touch each other when
                     the legs are straightened. This condition affects the alignment of the legs and can impact gait,
                     balance, and overall biomechanical function.
                   </p>
-                  <h3 className="text-xl font-bold">Clinical Importance</h3>
+                  <h3 className="text-lg md:text-xl font-bold">Clinical Importance</h3>
                   <p className="text-muted-foreground">
                     Understanding the biomechanics of knock knee is crucial for developing effective treatment
                     strategies. The condition can lead to abnormal stress distribution across the knee joint,
@@ -95,7 +102,7 @@ export default function Home() {
                     alt="X-ray image of knee joints"
                     width={400}
                     height={600}
-                    className="object-cover"
+                    className="object-cover w-full h-auto"
                   />
                 </div>
               </div>
@@ -103,7 +110,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="objective" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <section id="objective" className="w-full py-8 md:py-12 lg:py-24 bg-muted">
           <div className="w-full px-6 md:px-12 lg:px-16 mx-auto">
             <div className="mx-auto max-w-7xl space-y-4 text-center">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Research Objective</h2>
@@ -164,7 +171,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="methodology" className="w-full py-12 md:py-24 lg:py-32">
+        <section id="methodology" className="w-full py-8 md:py-12 lg:py-24">
           <div className="container px-4 md:px-6">
             <div className="mx-auto max-w-3xl space-y-8">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl text-center">Methodology</h2>
@@ -221,17 +228,25 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="results" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <section id="results" className="w-full py-8 md:py-12 lg:py-24 bg-muted">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl text-center mb-8">Findings & Results</h2>
             <Tabs defaultValue="graphs" className="w-full">
-              <TabsList className="grid w-full max-w-md mx-auto md:grid-cols-3">
-                <TabsTrigger value="graphs">Graphs</TabsTrigger>
-                <TabsTrigger value="insights">Key Insights</TabsTrigger>
-                <TabsTrigger value="images">Images</TabsTrigger>
-              </TabsList>
+              <div className="mb-6 overflow-x-auto pb-2">
+                <TabsList className="w-full max-w-md mx-auto flex flex-nowrap min-w-max">
+                  <TabsTrigger value="graphs" className="flex-1 py-3 px-4 text-sm sm:text-base">
+                    Graphs
+                  </TabsTrigger>
+                  <TabsTrigger value="insights" className="flex-1 py-3 px-4 text-sm sm:text-base">
+                    Key Insights
+                  </TabsTrigger>
+                  <TabsTrigger value="images" className="flex-1 py-3 px-4 text-sm sm:text-base">
+                    Images
+                  </TabsTrigger>
+                </TabsList>
+              </div>
               <TabsContent value="graphs" className="mt-6">
-                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                   <Card className="overflow-hidden">
                     <CardHeader>
                       <CardTitle>Joint accelration</CardTitle>
@@ -340,15 +355,17 @@ export default function Home() {
                     </CardContent>
                     <CardHeader>
                       <CardTitle>Solutions for Knock knee</CardTitle>
-                      <CardDescription style={{ fontSize: '18px', lineHeight: '1.5' }}>
-                        Introducing KneeNeuroMesh
-                        Smart Support for Knock Knee Correction
-
-                        KneeNeuroMesh is an advanced wearable biomedical system designed to correct genu valgum (knock knee) through intelligent, real-time support. Unlike traditional passive braces, KneeNeuroMesh combines soft robotics, neuromuscular electrical stimulation (EMS), biofeedback, and artificial intelligence (AI) to deliver an active and adaptive solution.
-
-                        This smart device monitors your movement continuously, detects misalignments, and responds instantly. It gently realigns the knees, activates weakened muscles, and supports proper gait—all while you move. The built-in AI learns your unique walking pattern and adjusts the support and stimulation accordingly, making the system personalized and increasingly effective over time.
-
-                        KneeNeuroMesh goes beyond support—it promotes lasting correction, improved muscle control, and healthier movement.
+                      <CardDescription style={{ fontSize: "18px", lineHeight: "1.5" }}>
+                        Introducing KneeNeuroMesh Smart Support for Knock Knee Correction KneeNeuroMesh is an advanced
+                        wearable biomedical system designed to correct genu valgum (knock knee) through intelligent,
+                        real-time support. Unlike traditional passive braces, KneeNeuroMesh combines soft robotics,
+                        neuromuscular electrical stimulation (EMS), biofeedback, and artificial intelligence (AI) to
+                        deliver an active and adaptive solution. This smart device monitors your movement continuously,
+                        detects misalignments, and responds instantly. It gently realigns the knees, activates weakened
+                        muscles, and supports proper gait—all while you move. The built-in AI learns your unique walking
+                        pattern and adjusts the support and stimulation accordingly, making the system personalized and
+                        increasingly effective over time. KneeNeuroMesh goes beyond support—it promotes lasting
+                        correction, improved muscle control, and healthier movement.
                       </CardDescription>
                     </CardHeader>
                   </Card>
@@ -365,7 +382,7 @@ export default function Home() {
                     </CardContent>
                     <CardHeader>
                       <CardTitle>3D Joint Model</CardTitle>
-                      <CardDescription style={{ fontSize: '18px', lineHeight: '1.5' }}>
+                      <CardDescription style={{ fontSize: "18px", lineHeight: "1.5" }}>
                         Finite element analysis of knee joint forces
                       </CardDescription>
                     </CardHeader>
@@ -387,19 +404,23 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="gait-videos" className="w-full py-12 md:py-24 lg:py-32">
+        <section id="gait-videos" className="w-full py-8 md:py-12 lg:py-24">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl text-center mb-8">Gait Analysis Videos</h2>
 
             <Tabs defaultValue="no-markers" className="w-full">
-              <TabsList className="grid w-full max-w-md mx-auto md:grid-cols-2">
-                <TabsTrigger value="no-markers">Videos without Markers</TabsTrigger>
-                <TabsTrigger value="with-markers">Videos with Markers</TabsTrigger>
-              </TabsList>
-
-              {/* Videos without Markers Tab */}
+              <div className="mb-6 overflow-x-auto pb-2">
+                <TabsList className="w-full max-w-md mx-auto flex flex-nowrap min-w-max">
+                  <TabsTrigger value="no-markers" className="flex-1 py-3 px-4 text-sm sm:text-base">
+                    Videos without Markers
+                  </TabsTrigger>
+                  <TabsTrigger value="with-markers" className="flex-1 py-3 px-4 text-sm sm:text-base">
+                    Videos with Markers
+                  </TabsTrigger>
+                </TabsList>
+              </div>
               <TabsContent value="no-markers" className="mt-6">
-                <div className="grid gap-8 lg:grid-cols-2">
+                <div className="grid gap-8 grid-cols-1 lg:grid-cols-2">
                   <Card className="overflow-hidden">
                     <CardHeader>
                       <CardTitle>Normal Gait</CardTitle>
@@ -407,7 +428,6 @@ export default function Home() {
                     </CardHeader>
                     <CardContent className="p-0">
                       <div className="aspect-video bg-muted flex items-center justify-center">
-                        {/* Replace with actual video embed */}
                         <video controls className="w-full h-full">
                           <source src="/videos/Normal movment.mp4" type="video/mp4" />
                           Your browser does not support the video tag.
@@ -431,7 +451,6 @@ export default function Home() {
                     </CardHeader>
                     <CardContent className="p-0">
                       <div className="aspect-video bg-muted flex items-center justify-center">
-                        {/* Replace with actual video embed */}
                         <video controls className="w-full h-full">
                           <source src="/videos/Knock knee.mp4" type="video/mp4" />
                           Your browser does not support the video tag.
@@ -451,9 +470,8 @@ export default function Home() {
                 </div>
               </TabsContent>
 
-              {/* Videos with Markers Tab */}
               <TabsContent value="with-markers" className="mt-6">
-                <div className="grid gap-8 lg:grid-cols-2">
+                <div className="grid gap-8 grid-cols-1 lg:grid-cols-2">
                   <Card className="overflow-hidden">
                     <CardHeader>
                       <CardTitle>Normal Gait with Motion Capture</CardTitle>
@@ -461,7 +479,6 @@ export default function Home() {
                     </CardHeader>
                     <CardContent className="p-0">
                       <div className="aspect-video bg-muted flex items-center justify-center">
-                        {/* Replace with actual video embed */}
                         <video controls className="w-full h-full">
                           <source src="/videos/Normal movment with markers.mp4" type="video/mp4" />
                           Your browser does not support the video tag.
@@ -485,7 +502,6 @@ export default function Home() {
                     </CardHeader>
                     <CardContent className="p-0">
                       <div className="aspect-video bg-muted flex items-center justify-center">
-                        {/* Replace with actual video embed */}
                         <video controls className="w-full h-full">
                           <source src="/videos/Knock knee with markers.mp4" type="video/mp4" />
                           Your browser does not support the video tag.
@@ -520,7 +536,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="3d-simulation" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <section id="3d-simulation" className="w-full py-8 md:py-12 lg:py-24 bg-muted">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl text-center mb-8">3D Simulation Videos</h2>
             <div className="grid gap-8 lg:grid-cols-2">
@@ -588,7 +604,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="presentation" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <section id="presentation" className="w-full py-8 md:py-12 lg:py-24 bg-muted">
           <div className="container px-4 md:px-6">
             <div className="mx-auto max-w-3xl space-y-8 text-center">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Research Documents</h2>
@@ -683,7 +699,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="conclusion" className="w-full py-12 md:py-24 lg:py-32">
+        <section id="conclusion" className="w-full py-8 md:py-12 lg:py-24">
           <div className="container px-4 md:px-6">
             <div className="mx-auto max-w-3xl space-y-8">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl text-center">Conclusion & Future Work</h2>
@@ -727,7 +743,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <section id="contact" className="w-full py-8 md:py-12 lg:py-24 bg-muted">
           <div className="container px-4 md:px-6">
             <div className="mx-auto max-w-3xl space-y-8 text-center">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Contact & References</h2>
