@@ -196,7 +196,7 @@ export default function Home() {
               <div className="grid gap-6 sm:grid-cols-2">
                 <div className="overflow-hidden rounded-lg border">
                   <Image
-                    src="/images/Q angle.jpg"
+                    src="/images/Q Angle.jpg"
                     alt="Comparison of leg alignments showing knock knee condition"
                     width={500}
                     height={300}
