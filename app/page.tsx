@@ -215,7 +215,7 @@ export default function Home() {
               </div>
               <div className="flex justify-center">
                 <a
-                  href="https://drive.google.com/file/d/1bifTpbUD2npYn2JmF7xSnWNwVmbMwzp2/view?usp=drive_link"
+                  href="https://drive.google.com/uc?export=download&id=1TrfoH5QjVNd27zk9on_cWP9o_Pafrka_"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm"
@@ -624,7 +624,7 @@ export default function Home() {
                     </div>
                     <div className="flex flex-col gap-2">
                       <a
-                        href="https://drive.google.com/file/d/17b-Ul6LBBc4UFsO_EpgUdUecy6i7Z-7u/view?usp=drive_link"
+                        href="https://drive.google.com/uc?export=download&id=1NZkzpm4SuUdWawlf3Qj-DqXPc-QrBwRW"
                         download
                         className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm w-full"
                       >
@@ -632,7 +632,7 @@ export default function Home() {
                         <span>Download Presentation</span>
                       </a>
                       <a
-                        href="https://drive.google.com/file/d/17b-Ul6LBBc4UFsO_EpgUdUecy6i7Z-7u/view?usp=drive_link"
+                        href="https://drive.google.com/file/d/1NZkzpm4SuUdWawlf3Qj-DqXPc-QrBwRW/view"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-md bg-secondary text-secondary-foreground hover:bg-secondary/90 shadow-sm w-full"
@@ -655,7 +655,7 @@ export default function Home() {
                     </div>
                     <div className="flex flex-col gap-2">
                       <a
-                        href="https://drive.google.com/file/d/1bifTpbUD2npYn2JmF7xSnWNwVmbMwzp2/view?usp=drive_link"
+                        href="https://drive.google.com/uc?export=download&id=1TrfoH5QjVNd27zk9on_cWP9o_Pafrka_"
                         download
                         className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm w-full"
                       >
@@ -663,7 +663,7 @@ export default function Home() {
                         <span>Download Research Paper</span>
                       </a>
                       <a
-                        href="https://drive.google.com/file/d/1bifTpbUD2npYn2JmF7xSnWNwVmbMwzp2/view?usp=drive_link"
+                        href="https://drive.google.com/file/d/1TrfoH5QjVNd27zk9on_cWP9o_Pafrka_/view?usp=drive_link"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-md bg-secondary text-secondary-foreground hover:bg-secondary/90 shadow-sm w-full"
@@ -685,7 +685,7 @@ export default function Home() {
                   <CardContent>
                     <div className="aspect-[16/9] w-full overflow-hidden rounded-md border">
                       <iframe
-                        src="https://drive.google.com/file/d/17b-Ul6LBBc4UFsO_EpgUdUecy6i7Z-7u/preview"
+                        src="https://docs.google.com/presentation/d/1e9d0YXqYd49SNtCxgQKLt9hiecMYL8l6/edit#slide=id.p1"
                         width="100%"
                         height="100%"
                         allow="autoplay"
@@ -730,7 +730,7 @@ export default function Home() {
               </div>
               <div className="flex justify-center">
                 <a
-                  href="https://drive.google.com/file/d/1bifTpbUD2npYn2JmF7xSnWNwVmbMwzp2/view?usp=drive_link"
+                  href="https://drive.google.com/uc?export=download&id=1TrfoH5QjVNd27zk9on_cWP9o_Pafrka_"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm"
